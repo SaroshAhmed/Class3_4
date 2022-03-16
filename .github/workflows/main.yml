@@ -32,8 +32,8 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install # will run `yarn install` command    
-          
-      - uses: borales/actions-yarn@v2.3.0
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
           
@@ -44,7 +44,7 @@ jobs:
         run: npm install --global surge
         
       - name: Deploy to surge
-        run: surge ./build class3saroshahmedreact.surge.sh --token ${{ Secrets.SURGE_TOKEN3_4}}
+        run: surge ./build class3_4saroshahmedreact.surge.sh --token ${{ Secrets.SURGE_TOKEN3_4}}
         
    
 
