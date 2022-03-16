@@ -1,25 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import './Hello.css';
 
-function App() {
+function Test(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <p className='headone'> Hello from  <strong>{props.name}</strong>  <i><h1>This is a heading. </h1> </i> {5+10} </p>
   );
 }
 
-export default App;
+export default Test;

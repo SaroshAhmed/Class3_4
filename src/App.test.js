@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import logo from './logo.svg';
+import './App.css';
+import './Hello.css';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+function Test(props) {
+  return (
+   <p className='headone'> Hello from  <strong>{props.name}</strong>  <i><h1>This is a heading. </h1> </i> {5+10} </p>
+  );
+}
+
+export default Test;
