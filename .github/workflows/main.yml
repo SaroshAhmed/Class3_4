@@ -44,7 +44,7 @@ jobs:
         run: npm install --global surge
         
       - name: Deploy to surge
-        run: surge ./build class3_4_saroshahmedreact.surge.sh --token ${{ Secrets.SURGE_TOKEN3_4}}
+        run: surge ./build class2saroshahmedreact.surge.sh --token ${{ Secrets.SURGE_TOKEN2}}
         
    
 
